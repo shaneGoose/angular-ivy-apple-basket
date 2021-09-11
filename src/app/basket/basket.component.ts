@@ -9,7 +9,7 @@ import { Apple } from "../../models/apple";
 })
 export class BasketComponent {
 
-  @Input() items: Apple[];
+  @Input() items: Apple[] = [];
 
   constructor() {}
 

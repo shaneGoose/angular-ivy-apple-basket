@@ -14,4 +14,8 @@ export class AppComponent  {
     { color: 'red', size: Size.LG, lotNumber: '1' },
     { color: 'red', size: Size.LG, lotNumber: '2' }
   ];
+
+  clear() {
+    
+  }
 }
