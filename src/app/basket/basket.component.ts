@@ -15,12 +15,14 @@ export class BasketComponent {
 
   modify() {
     let date = new Date();
-    const rando = Math.random();
+    let rando = Math.random();
 
     console.log('MODIFY');
     console.log('Before: ');
     console.dir(this.items);
     this.items.forEach( apple => {
+      date = new Date();
+      rando = Math.random();
       const sizeChoice = Math.floor((date.getMilliseconds() * rando) % 3 );
       switch(sizeChoice) {
         case 0: { apple.size = Size.SM; break; }
@@ -30,6 +32,7 @@ export class BasketComponent {
 
       setTimeout(() => {
         date = new Date();
+        rando = Math.random();
         const colorChoice = Math.floor((date.getMilliseconds() * rando) % 3 );
         switch(colorChoice) {
           case 0: { apple.color = 'red'; break; }

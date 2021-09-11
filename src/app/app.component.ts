@@ -16,6 +16,10 @@ export class AppComponent  {
   ];
 
   clear() {
-    
+    this.apples = [
+      { color: 'red', size: Size.LG, lotNumber: '0' },
+      { color: 'red', size: Size.LG, lotNumber: '1' },
+      { color: 'red', size: Size.LG, lotNumber: '2' }
+    ];
   }
 }
