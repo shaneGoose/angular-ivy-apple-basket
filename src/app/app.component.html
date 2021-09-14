@@ -12,5 +12,8 @@
 
 <button (click)="clear()">Clear and Reset</button>
 
-<h1>Basket:</h1> 
+<h1>Basket by reference:</h1> 
 <basket [items]="apples"></basket>
+
+<h1>Basket by value:</h1>
+<basket [items]="quickCopy()"></basket>

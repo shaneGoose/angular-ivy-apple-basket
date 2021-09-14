@@ -5,9 +5,9 @@ import { Apple } from '../models/apple';
 @Component({
   selector: 'my-app',
   templateUrl: './app.component.html',
-  styleUrls: [ './app.component.css' ]
+  styleUrls: ['./app.component.css']
 })
-export class AppComponent  {
+export class AppComponent {
   name = 'Angular ' + VERSION.major;
   apples: Apple[] = [
     { color: 'red', size: Size.LG, lotNumber: '0' },
@@ -21,5 +21,9 @@ export class AppComponent  {
       { color: 'red', size: Size.LG, lotNumber: '1' },
       { color: 'red', size: Size.LG, lotNumber: '2' }
     ];
+  }
+
+  quickCopy(): Apple[] {
+    return JSON.parse(JSON.stringify(this.apples));
   }
 }
